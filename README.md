@@ -2,7 +2,7 @@
 
 GarterLoop is a utility for running sound at variety shows made with Max/MSP.
 
-:caution: It is very rough around the edges (and also the everywhere else) :cuation:
+:caution: It is very rough around the edges (and also the everywhere else) :caution:
 
 ## Background
 
@@ -28,4 +28,8 @@ I couldn't figure out how to do what I wanted in Live (I tried follow actions in
 
 - Pull in lineup, show sound+tech notes next to the song in the playlist
 - Percentage + time remaining in track displays
+- Write Usage Section
+
+## Usage
+![interface](doc/interface.jpg)
 
