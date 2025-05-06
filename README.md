@@ -2,7 +2,7 @@
 
 GarterLoop is a utility for running sound at variety shows made with Max/MSP.
 
-:caution: It is very rough around the edges (and also the everywhere else) :caution:
+⚠️ It is very rough around the edges (and also the everywhere else) ⚠️
 
 ## Background
 
@@ -23,12 +23,17 @@ I couldn't figure out how to do what I wanted in Live (I tried follow actions in
 - EQ Control
 - External audio support
 - Laptop Mic in
+- Pull in lineup, show sound+tech notes next to the song in the playlist
+- Percentage + time remaining in track displays
 
 ## Future Plans
 
-- Pull in lineup, show sound+tech notes next to the song in the playlist
-- Percentage + time remaining in track displays
 - Write Usage Section
+- Settings tab
+- Save/load for playlists, settings, loop markers, lineups, etc
+- OSC bindings
+    - Mobile app (instead of screen sharing to an iPad)
+- Package into .app/.exe files
 
 ## Usage
 ![interface](doc/interface.jpg)
