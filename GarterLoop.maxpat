@@ -10,12 +10,12 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 0.0, 72.0, 1800.0, 1097.0 ],
+		"rect" : [ 34.0, 106.0, 1332.0, 1029.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
-		"default_fontname" : "Arial",
+		"default_fontname" : "Futura",
 		"gridonopen" : 1,
 		"gridsize" : [ 15.0, 15.0 ],
 		"gridsnaponopen" : 1,
@@ -40,6 +40,367 @@
 		"showontab" : 1,
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-114",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1397.0, 1687.0, 58.0, 40.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1397.0, 1722.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-115",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 6,
+							"revision" : 5,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 59.0, 125.0, 640.0, 480.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 0,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 1,
+						"lefttoolbarpinned" : 0,
+						"toptoolbarpinned" : 0,
+						"righttoolbarpinned" : 0,
+						"bottomtoolbarpinned" : 0,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 1,
+						"enablevscroll" : 1,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-3",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 166.5, 315.0, 36.0, 22.0 ],
+									"text" : "% 12"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-2",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 156.0, 102.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "outlet",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 166.5, 388.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-109",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 156.0, 152.0, 69.0, 22.0 ],
+									"text" : "metro 1000"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-101",
+									"maxclass" : "newobj",
+									"numinlets" : 3,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 166.5, 351.0, 146.0, 22.0 ],
+									"text" : "sprintf %02d:%02d:%02d"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-87",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "int", "int", "int" ],
+									"patching_rect" : [ 166.5, 278.0, 146.0, 22.0 ],
+									"text" : "unpack i i i"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-86",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 156.0, 190.0, 31.0, 22.0 ],
+									"text" : "time"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-55",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 3,
+									"outlettype" : [ "list", "list", "int" ],
+									"patching_rect" : [ 156.0, 232.0, 40.0, 22.0 ],
+									"text" : "date"
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"source" : [ "obj-101", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-86", 0 ],
+									"source" : [ "obj-109", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-109", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-101", 0 ],
+									"source" : [ "obj-3", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-87", 0 ],
+									"source" : [ "obj-55", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-55", 0 ],
+									"source" : [ "obj-86", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-101", 2 ],
+									"source" : [ "obj-87", 2 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-101", 1 ],
+									"source" : [ "obj-87", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-3", 0 ],
+									"source" : [ "obj-87", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 1397.0, 1766.0, 69.0, 40.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p dbd.clock"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.0, 0.623529411764706, 1.0, 1.0 ],
+					"bgcolor2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.0, 0.623529411764706, 1.0, 1.0 ],
+					"bgfillcolor_color1" : [ 0.0, 0.623529411764706, 1.0, 1.0 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "gradient",
+					"fontname" : "Futura",
+					"fontsize" : 32.0,
+					"gradient" : 1,
+					"id" : "obj-105",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1259.0, 1803.0, 409.0, 50.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 679.499995231628418, 645.66668963432312, 160.000004768371582, 50.0 ],
+					"text" : "08:14:58"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-52",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1043.0, 449.0, 100.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-44",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 408.0, 606.0, 35.0, 40.0 ],
+					"text" : "dac~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 292.0, -3.0, 58.0, 40.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-43",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 570.666683673858643, 826.666691303253174, 29.0, 40.0 ],
+					"text" : "thru"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-39",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 755.0, 826.666691303253174, 29.0, 40.0 ],
+					"text" : "thru"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-27",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 846.601930141448975, 910.80582469701767, 29.5, 24.0 ],
+					"text" : "100"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 846.601930141448975, 871.0, 58.0, 40.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Futura",
 					"id" : "obj-169",
@@ -71,11 +432,11 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-162",
-					"linecount" : 6,
+					"linecount" : 7,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 639.800010085105896, 761.333356022834778, 99.0, 87.0 ],
+					"patching_rect" : [ 639.800010085105896, 761.333356022834778, 99.0, 116.0 ],
 					"text" : "prevent out of order start/done messages kicking over to filler mode when we shouldn't"
 				}
 
@@ -83,11 +444,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-160",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 571.0, 784.166692137718201, 32.0, 22.0 ],
+					"patching_rect" : [ 571.0, 784.166692137718201, 32.0, 40.0 ],
 					"text" : "gate"
 				}
 
@@ -99,7 +461,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 632.0, 735.333353161811829, 84.000001430511475, 22.0 ],
+					"patching_rect" : [ 632.0, 735.333353161811829, 84.000001430511475, 24.0 ],
 					"text" : "=="
 				}
 
@@ -112,7 +474,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 697.0, 704.333353161811829, 50.0, 22.0 ]
+					"patching_rect" : [ 697.0, 704.333353161811829, 50.0, 24.0 ]
 				}
 
 			}
@@ -123,8 +485,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 697.200008153915405, 664.000019788742065, 29.5, 22.0 ],
-					"text" : "$2"
+					"patching_rect" : [ 697.200008153915405, 664.000019788742065, 29.5, 24.0 ],
+					"text" : "$1"
 				}
 
 			}
@@ -136,7 +498,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 632.0, 704.333353161811829, 50.0, 22.0 ]
+					"patching_rect" : [ 632.0, 704.333353161811829, 50.0, 24.0 ]
 				}
 
 			}
@@ -147,7 +509,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 632.200008153915405, 664.000019788742065, 50.0, 22.0 ],
+					"patching_rect" : [ 632.200008153915405, 664.000019788742065, 50.0, 24.0 ],
 					"text" : "$1"
 				}
 
@@ -159,7 +521,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 405.0, 26.666667461395264, 31.0, 22.0 ],
+					"patching_rect" : [ 405.0, 26.666667461395264, 31.0, 24.0 ],
 					"text" : "next"
 				}
 
@@ -167,11 +529,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-85",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 502.5, 1159.0, 106.0, 22.0 ],
+					"patching_rect" : [ 502.5, 1159.0, 106.0, 40.0 ],
 					"text" : "bgfillcolor 1 0 0 $1"
 				}
 
@@ -191,6 +554,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-65",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 3,
@@ -206,7 +570,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 743.0, 678.0, 386.0, 451.0 ],
+						"rect" : [ 743.0, 282.0, 863.0, 847.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -234,7 +598,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -402,7 +765,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 241.0, 337.0, 50.0, 22.0 ],
-													"text" : "4 18"
+													"text" : "2 16"
 												}
 
 											}
@@ -967,7 +1330,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 426.5, 871.0, 95.0, 22.0 ],
+					"patching_rect" : [ 426.5, 871.0, 95.0, 40.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1000,7 +1363,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 293.699998021125793, 956.80001425743103, 152.0, 71.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 562.0, 383.0, 71.0 ],
+					"presentation_rect" : [ 30.0, 562.0, 399.0, 71.0 ],
 					"text" : "00:00"
 				}
 
@@ -1026,19 +1389,20 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 331.299998581409454, 1044.800015568733215, 152.0, 71.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 418.0, 562.0, 383.0, 71.0 ],
-					"text" : "04:18"
+					"presentation_rect" : [ 440.5, 562.0, 399.0, 71.0 ],
+					"text" : "02:16"
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-22",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1199.333370089530945, 616.000018358230591, 58.0, 22.0 ],
+					"patching_rect" : [ 1199.333370089530945, 616.000018358230591, 58.0, 40.0 ],
 					"text" : "loadbang"
 				}
 
@@ -1050,7 +1414,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1592.0, 919.0, 144.0, 22.0 ],
+					"patching_rect" : [ 1592.0, 919.0, 144.0, 24.0 ],
 					"text" : "gate"
 				}
 
@@ -1062,7 +1426,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"patching_rect" : [ 1592.0, 878.0, 107.0, 22.0 ],
+					"patching_rect" : [ 1592.0, 878.0, 107.0, 24.0 ],
 					"text" : "== @triggers -1"
 				}
 
@@ -1074,7 +1438,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1592.0, 843.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1592.0, 843.0, 29.5, 24.0 ],
 					"text" : "$1"
 				}
 
@@ -1086,7 +1450,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1680.0, 843.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1680.0, 843.0, 29.5, 24.0 ],
 					"text" : "$1"
 				}
 
@@ -1094,11 +1458,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-62",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1565.5, 1031.0, 29.0, 22.0 ],
+					"patching_rect" : [ 1565.5, 1031.0, 29.0, 40.0 ],
 					"text" : "thru"
 				}
 
@@ -1110,7 +1475,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "" ],
-					"patching_rect" : [ 1495.0, 636.0, 35.0, 22.0 ],
+					"patching_rect" : [ 1495.0, 636.0, 35.0, 24.0 ],
 					"text" : "timer"
 				}
 
@@ -1118,6 +1483,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-4",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1132,7 +1498,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1800.0, 1071.0 ],
+						"rect" : [ 0.0, 26.0, 1332.0, 1003.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1197,7 +1563,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 804.999998569488525, 480.0, 74.0, 22.0 ],
+					"patching_rect" : [ 804.999998569488525, 480.0, 74.0, 40.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1212,6 +1578,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-46",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -1227,7 +1594,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 26.0, 1800.0, 1071.0 ],
+						"rect" : [ 0.0, 26.0, 1332.0, 1003.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1352,7 +1719,7 @@
 													"maxclass" : "outlet",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 243.0, 440.0, 30.0, 30.0 ]
+													"patching_rect" : [ 241.0, 441.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -1365,7 +1732,7 @@
 													"numinlets" : 0,
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
-													"patching_rect" : [ 243.0, 65.0, 30.0, 30.0 ]
+													"patching_rect" : [ 241.0, 67.0, 30.0, 30.0 ]
 												}
 
 											}
@@ -1389,7 +1756,7 @@
 													"numoutlets" : 1,
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 241.0, 337.0, 50.0, 22.0 ],
-													"text" : "4 18"
+													"text" : "2 16"
 												}
 
 											}
@@ -1519,7 +1886,7 @@
 									"patching_rect" : [ 14.503817796707153, 493.893163919448853, 152.0, 71.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 179.0, 562.0, 164.0, 71.0 ],
-									"text" : "04:18"
+									"text" : "02:16"
 								}
 
 							}
@@ -1790,6 +2157,7 @@
 									"fontname" : "Futura",
 									"fontsize" : 36.0,
 									"id" : "obj-12",
+									"linecount" : 3,
 									"maxclass" : "textedit",
 									"numinlets" : 1,
 									"numoutlets" : 4,
@@ -1798,19 +2166,20 @@
 									"patching_rect" : [ 885.333359718322754, 594.66668438911438, 235.0, 147.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 883.0, 747.0, 809.0, 301.0 ],
-									"text" : "\"no setup\""
+									"text" : "\"8 turntables arranged in sets of 2\""
 								}
 
 							}
 , 							{
 								"box" : 								{
 									"id" : "obj-13",
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 906.666693687438965, 476.000014185905457, 120.0, 22.0 ],
-									"text" : "\"no setup\""
+									"patching_rect" : [ 906.666693687438965, 476.000014185905457, 120.0, 49.0 ],
+									"text" : "\"8 turntables arranged in sets of 2\""
 								}
 
 							}
@@ -1849,6 +2218,7 @@
 									"fontname" : "Futura",
 									"fontsize" : 36.0,
 									"id" : "obj-6",
+									"linecount" : 4,
 									"maxclass" : "textedit",
 									"numinlets" : 1,
 									"numoutlets" : 4,
@@ -1857,7 +2227,7 @@
 									"patching_rect" : [ 1441.333376288414001, 526.717593669891357, 235.0, 147.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 885.0, 267.0, 807.0, 366.0 ],
-									"text" : "\"no setup\""
+									"text" : "\"disney princess crowns center front stage\""
 								}
 
 							}
@@ -1929,7 +2299,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1489.333377718925476, 126.717581748962402, 187.0, 22.0 ],
-									"text" : "get http://127.0.0.1:8080/lineups/burn-baby-burn"
+									"text" : "get https://noobops.club/yolo.json"
 								}
 
 							}
@@ -1990,7 +2360,7 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 664.601823389530182, 853.097413778305054, 47.0, 22.0 ],
+									"patching_rect" : [ 659.0, 855.0, 47.0, 22.0 ],
 									"text" : "get $1"
 								}
 
@@ -2002,7 +2372,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "bang", "" ],
-									"patching_rect" : [ 640.708016157150269, 787.610682845115662, 31.0, 22.0 ],
+									"patching_rect" : [ 659.0, 781.0, 31.0, 22.0 ],
 									"text" : "t b l"
 								}
 
@@ -2014,7 +2384,7 @@
 									"numinlets" : 3,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 640.708016157150269, 743.362891674041748, 219.0, 22.0 ],
+									"patching_rect" : [ 659.0, 743.66668438911438, 219.0, 22.0 ],
 									"text" : "combine clips[ 0 ]::filename @triggers 1"
 								}
 
@@ -2026,8 +2396,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 640.708016157150269, 823.893871605396271, 136.0, 22.0 ],
-									"text" : "clips[8]::filename"
+									"patching_rect" : [ 659.0, 824.66668438911438, 136.0, 22.0 ],
+									"text" : "clips[1]::filename"
 								}
 
 							}
@@ -2046,15 +2416,15 @@
 									"fontsize" : 48.0,
 									"gradient" : 1,
 									"id" : "obj-160",
-									"linecount" : 8,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 453.708016157150269, 1017.0, 219.0, 507.0 ],
+									"patching_rect" : [ 453.708016157150269, 1017.0, 221.0, 320.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 17.0, 660.000019669532776, 1675.0, 71.0 ],
-									"text" : "\"Tweaker Ft. Mellowdrone - Worse Than Yesterday.mp3\""
+									"text" : "\"03 - Too Much Skunk tonight....mp3\""
 								}
 
 							}
@@ -2145,7 +2515,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1173.333368301391602, 653.33335280418396, 136.0, 22.0 ],
-									"text" : "clips[7]::filename"
+									"text" : "clips[0]::filename"
 								}
 
 							}
@@ -2205,15 +2575,15 @@
 									"fontsize" : 48.0,
 									"gradient" : 1,
 									"id" : "obj-60",
-									"linecount" : 8,
+									"linecount" : 4,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 1113.0, 843.0, 237.168160676956177, 507.0 ],
+									"patching_rect" : [ 1113.0, 843.0, 242.0, 258.0 ],
 									"presentation" : 1,
 									"presentation_rect" : [ 17.0, 9.0, 1675.0, 71.0 ],
-									"text" : "\"Tweaker Ft. Mellowdrone - Worse Than Yesterday.mp3\""
+									"text" : "\"01 - Mad at Disney [Explicit].mp3\""
 								}
 
 							}
@@ -2861,7 +3231,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 676.800010085105896, 480.0, 61.0, 22.0 ],
+					"patching_rect" : [ 676.800010085105896, 480.0, 61.0, 40.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -2880,7 +3250,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 292.000008702278137, 26.666667461395264, 65.0, 22.0 ],
+					"patching_rect" : [ 292.000008702278137, 26.666667461395264, 65.0, 24.0 ],
 					"text" : "getcontent"
 				}
 
@@ -2984,7 +3354,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 769.0, 1914.0, 29.5, 22.0 ],
+					"patching_rect" : [ 769.0, 1914.0, 29.5, 24.0 ],
 					"text" : "+~"
 				}
 
@@ -2996,7 +3366,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 656.0, 1918.0, 29.5, 22.0 ],
+					"patching_rect" : [ 656.0, 1918.0, 29.5, 24.0 ],
 					"text" : "+~"
 				}
 
@@ -3004,11 +3374,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-18",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 893.0, 1658.0, 52.0, 22.0 ],
+					"patching_rect" : [ 893.0, 1658.0, 52.0, 40.0 ],
 					"text" : "adc~ 17"
 				}
 
@@ -3016,11 +3387,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-21",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 221.333339929580688, 26.666667461395264, 35.0, 22.0 ],
+					"patching_rect" : [ 221.333339929580688, 26.666667461395264, 35.0, 40.0 ],
 					"text" : "clear"
 				}
 
@@ -3028,11 +3400,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-9",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1453.33337664604187, 21.333333969116211, 35.0, 22.0 ],
+					"patching_rect" : [ 1453.33337664604187, 21.333333969116211, 35.0, 40.0 ],
 					"text" : "clear"
 				}
 
@@ -3044,7 +3417,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1565.5, 1061.0, 29.5, 22.0 ],
+					"patching_rect" : [ 1565.5, 1061.0, 29.5, 24.0 ],
 					"text" : "$1"
 				}
 
@@ -3056,7 +3429,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1565.5, 1120.0, 31.0, 22.0 ],
+					"patching_rect" : [ 1565.5, 1120.0, 31.0, 24.0 ],
 					"text" : "next"
 				}
 
@@ -3064,11 +3437,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-45",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 1565.5, 1090.0, 22.0, 22.0 ],
+					"patching_rect" : [ 1565.5, 1090.0, 22.0, 40.0 ],
 					"text" : "t b"
 				}
 
@@ -3095,7 +3469,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1284.000038266181946, 854.666692137718201, 130.083331823348999, 22.0 ],
+					"patching_rect" : [ 1284.000038266181946, 854.666692137718201, 130.083331823348999, 24.0 ],
 					"text" : "gate~"
 				}
 
@@ -3103,11 +3477,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1233.333370089530945, 854.666692137718201, 39.0, 22.0 ],
+					"patching_rect" : [ 1233.333370089530945, 854.666692137718201, 39.0, 40.0 ],
 					"text" : "gate~"
 				}
 
@@ -3143,11 +3518,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-8",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1189.33336877822876, 854.666692137718201, 39.0, 22.0 ],
+					"patching_rect" : [ 1189.33336877822876, 854.666692137718201, 39.0, 40.0 ],
 					"text" : "gate~"
 				}
 
@@ -3155,11 +3531,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-7",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1138.666700601577759, 854.666692137718201, 39.0, 22.0 ],
+					"patching_rect" : [ 1138.666700601577759, 854.666692137718201, 39.0, 40.0 ],
 					"text" : "gate~"
 				}
 
@@ -3182,8 +3559,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 755.0, 871.0, 29.5, 22.0 ],
-					"text" : "-50"
+					"patching_rect" : [ 755.0, 871.0, 29.5, 24.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -3204,11 +3581,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-91",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1022.666697144508362, 288.000008583068848, 76.0, 22.0 ],
+					"patching_rect" : [ 1022.666697144508362, 288.000008583068848, 76.0, 40.0 ],
 					"text" : "clipheight $1"
 				}
 
@@ -3223,7 +3601,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 152.000004529953003, 449.333346724510193, 79.0, 160.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 819.0, 60.0, 79.0, 190.0 ],
+					"presentation_rect" : [ 857.0, 60.0, 41.0, 224.0 ],
 					"size" : 256.0
 				}
 
@@ -3231,11 +3609,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-80",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 144.000004291534424, 650.666686058044434, 76.0, 22.0 ],
+					"patching_rect" : [ 144.000004291534424, 650.666686058044434, 76.0, 40.0 ],
 					"text" : "clipheight $1"
 				}
 
@@ -3422,7 +3801,7 @@
 					"patching_rect" : [ 1196.000035643577576, 1253.333370685577393, 577.0, 196.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 2,
-					"presentation_rect" : [ 1178.0, 645.66668963432312, 532.0, 196.0 ],
+					"presentation_rect" : [ 1183.749974966049194, 645.66668963432312, 577.0, 196.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -3458,7 +3837,7 @@
 									"Active[2]" : 1.0,
 									"Active[3]" : 0.0,
 									"Active[4]" : 0.0,
-									"Freq[1]" : 50.0,
+									"Freq[1]" : 5138.188976382958572,
 									"Freq[2]" : 7590.38304835449344,
 									"Freq[3]" : 10029.147918688502614,
 									"Freq[4]" : 13306.442163870837248,
@@ -3502,7 +3881,7 @@
 												"Active[2]" : 1.0,
 												"Active[3]" : 0.0,
 												"Active[4]" : 0.0,
-												"Freq[1]" : 50.0,
+												"Freq[1]" : 5138.188976382958572,
 												"Freq[2]" : 7590.38304835449344,
 												"Freq[3]" : 10029.147918688502614,
 												"Freq[4]" : 13306.442163870837248,
@@ -3585,7 +3964,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1565.5, 994.0, 45.5, 22.0 ],
+					"patching_rect" : [ 1565.5, 994.0, 45.5, 24.0 ],
 					"text" : "gate"
 				}
 
@@ -3642,7 +4021,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 584.0, 583.0, 50.549991130828857, 22.0 ],
+					"patching_rect" : [ 584.0, 583.0, 50.549991130828857, 24.0 ],
 					"text" : "gate"
 				}
 
@@ -3650,11 +4029,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-53",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 571.0, 871.0, 72.0, 22.0 ],
+					"patching_rect" : [ 571.0, 871.0, 72.0, 40.0 ],
 					"text" : "0, 100 1000"
 				}
 
@@ -3675,11 +4055,11 @@
 				"box" : 				{
 					"id" : "obj-48",
 					"maxclass" : "newobj",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 584.200008153915405, 616.000018358230591, 190.0, 22.0 ],
-					"text" : "route done"
+					"numinlets" : 3,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 584.200008153915405, 616.000018358230591, 360.599983692169189, 24.0 ],
+					"text" : "route done start"
 				}
 
 			}
@@ -3690,7 +4070,7 @@
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
-					"patching_rect" : [ 571.0, 909.0, 40.0, 22.0 ],
+					"patching_rect" : [ 571.0, 909.0, 40.0, 24.0 ],
 					"text" : "line"
 				}
 
@@ -3702,7 +4082,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1533.333363771438599, 21.333333969116211, 65.0, 22.0 ],
+					"patching_rect" : [ 1533.333363771438599, 21.333333969116211, 65.0, 24.0 ],
 					"text" : "getcontent"
 				}
 
@@ -3710,11 +4090,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-34",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 1680.0, 729.0, 93.0, 22.0 ],
+					"patching_rect" : [ 1680.0, 729.0, 93.0, 40.0 ],
 					"text" : "route start done"
 				}
 
@@ -3726,7 +4107,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 769.0, 1670.0, 29.5, 22.0 ],
+					"patching_rect" : [ 769.0, 1670.0, 29.5, 24.0 ],
 					"text" : "+~"
 				}
 
@@ -3738,7 +4119,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 656.0, 1674.0, 29.5, 22.0 ],
+					"patching_rect" : [ 656.0, 1674.0, 29.5, 24.0 ],
 					"text" : "+~"
 				}
 
@@ -3778,7 +4159,7 @@
 				"box" : 				{
 					"basictuning" : 440,
 					"bgcolor" : [ 0.203921568627451, 0.72156862745098, 0.341176470588235, 1.0 ],
-					"clipheight" : 46.0,
+					"clipheight" : 40.0,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Bixiga 70 - Bixiga 70/Bixiga 70 - Bixiga 70 - 01 Grito de Paz.mp3",
@@ -3884,9 +4265,9 @@
 								"filename" : "_..it ain't my fault....mp3",
 								"filekind" : "audiofile",
 								"id" : "u264005760",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"loop" : 1
+									"loop" : 0
 								}
 
 							}
@@ -3895,10 +4276,350 @@
 								"filename" : "1 Main Theme.mp3",
 								"filekind" : "audiofile",
 								"id" : "u658005768",
-								"selection" : [ 0.293103448275862, 0.308429118773946 ],
 								"loop" : 0,
 								"content_state" : 								{
 									"loop" : 0
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Music/Media.localized/Unknown Artist/Balatro/2 Shop Theme.mp3",
+								"filename" : "2 Shop Theme.mp3",
+								"filekind" : "audiofile",
+								"id" : "u159012621",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Music/Media.localized/Unknown Artist/Balatro/3 Tarot Pack Theme.mp3",
+								"filename" : "3 Tarot Pack Theme.mp3",
+								"filekind" : "audiofile",
+								"id" : "u555012618",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Music/Media.localized/Unknown Artist/Balatro/4 Planet Pack Theme.mp3",
+								"filename" : "4 Planet Pack Theme.mp3",
+								"filekind" : "audiofile",
+								"id" : "u302012619",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Music/Media.localized/Unknown Artist/Balatro/5 Boss Blind Theme.mp3",
+								"filename" : "5 Boss Blind Theme.mp3",
+								"filekind" : "audiofile",
+								"id" : "u409012620",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 01 Sunny Side Up.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 01 Sunny Side Up.flac",
+								"filekind" : "audiofile",
+								"id" : "u910012665",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 02 Surf City.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 02 Surf City.flac",
+								"filekind" : "audiofile",
+								"id" : "u823004587",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 03 Boardwalk Dulce.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 03 Boardwalk Dulce.flac",
+								"filekind" : "audiofile",
+								"id" : "u681012641",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 04 Ivory Tower.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 04 Ivory Tower.flac",
+								"filekind" : "audiofile",
+								"id" : "u094012642",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 05 Gone For A Rip.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 05 Gone For A Rip.flac",
+								"filekind" : "audiofile",
+								"id" : "u589012643",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 06 Yabba Dabba.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 06 Yabba Dabba.flac",
+								"filekind" : "audiofile",
+								"id" : "u764012644",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 07 Silk Tuxedo.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 07 Silk Tuxedo.flac",
+								"filekind" : "audiofile",
+								"id" : "u596012645",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 08 Cuttin and Diggin.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 08 Cuttin and Diggin.flac",
+								"filekind" : "audiofile",
+								"id" : "u398012646",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 09 Subway Smokin.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 09 Subway Smokin.flac",
+								"filekind" : "audiofile",
+								"id" : "u979012647",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 10 Sahara.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 10 Sahara.flac",
+								"filekind" : "audiofile",
+								"id" : "u190012648",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 11 Royal Oil.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 11 Royal Oil.flac",
+								"filekind" : "audiofile",
+								"id" : "u696012649",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 12 Japonaise.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 12 Japonaise.flac",
+								"filekind" : "audiofile",
+								"id" : "u595012650",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 13 Standby.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 13 Standby.flac",
+								"filekind" : "audiofile",
+								"id" : "u165012651",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 14 Sloth Pumpkin.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 14 Sloth Pumpkin.flac",
+								"filekind" : "audiofile",
+								"id" : "u253012652",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 15 Smelting Pot.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 15 Smelting Pot.flac",
+								"filekind" : "audiofile",
+								"id" : "u160012653",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 16 Dabvember til Dabcember.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 16 Dabvember til Dabcember.flac",
+								"filekind" : "audiofile",
+								"id" : "u709012654",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 17 High's Gone.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 17 High's Gone.flac",
+								"filekind" : "audiofile",
+								"id" : "u066012655",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 18 Dab City.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 18 Dab City.flac",
+								"filekind" : "audiofile",
+								"id" : "u629012656",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 19 Blazy River.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 19 Blazy River.flac",
+								"filekind" : "audiofile",
+								"id" : "u879012657",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Covenant/1996 - Sequencer/Covenant - Sequencer - 02 Stalker.flac",
+								"filename" : "Covenant - Sequencer - 02 Stalker.flac",
+								"filekind" : "audiofile",
+								"id" : "u623009565",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 20 Pineapple.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 20 Pineapple.flac",
+								"filekind" : "audiofile",
+								"id" : "u381012658",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 21 Sunset Fade.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 21 Sunset Fade.flac",
+								"filekind" : "audiofile",
+								"id" : "u535012659",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 22 Blueberry Meringue.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 22 Blueberry Meringue.flac",
+								"filekind" : "audiofile",
+								"id" : "u168012660",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 23 Smoked In.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 23 Smoked In.flac",
+								"filekind" : "audiofile",
+								"id" : "u800012661",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 24 Petroglyph.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 24 Petroglyph.flac",
+								"filekind" : "audiofile",
+								"id" : "u743012662",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 25 Seventy-Six Days.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 25 Seventy-Six Days.flac",
+								"filekind" : "audiofile",
+								"id" : "u709012663",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+, 							{
+								"absolutepath" : "/Users/jennorris/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One/Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 26 Return.flac",
+								"filename" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 26 Return.flac",
+								"filekind" : "audiofile",
+								"id" : "u636012664",
+								"loop" : 0,
+								"content_state" : 								{
+
 								}
 
 							}
@@ -3922,7 +4643,7 @@
 					"patching_rect" : [ 1253.333370089530945, 82.666669130325317, 586.0, 492.0 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
-					"presentation_rect" : [ 1180.5, 60.0, 529.5, 573.0 ],
+					"presentation_rect" : [ 1185.0, 65.0, 529.5, 573.0 ],
 					"quality" : "basic",
 					"timestretch" : [ 0 ],
 					"waveformdisplay" : 0
@@ -3961,7 +4682,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 48.000001430511475, 489.333347916603088, 49.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 809.5, 302.0, 98.0, 331.0 ],
+					"presentation_rect" : [ 841.5, 302.0, 72.0, 331.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "live.gain~[1]",
@@ -3982,11 +4703,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-13",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 769.0, 1618.0, 78.0, 22.0 ],
+					"patching_rect" : [ 769.0, 1618.0, 78.0, 40.0 ],
 					"text" : "M4L.cross1~"
 				}
 
@@ -3994,11 +4716,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-10",
+					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 656.0, 1618.0, 78.0, 22.0 ],
+					"patching_rect" : [ 656.0, 1618.0, 78.0, 40.0 ],
 					"text" : "M4L.cross1~"
 				}
 
@@ -4016,7 +4739,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 656.0, 1964.0, 54.0, 136.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1010.0, 302.0, 120.0, 331.0 ],
+					"presentation_rect" : [ 896.5, 302.0, 120.0, 331.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "main output",
@@ -4042,7 +4765,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 656.0, 2128.0, 45.0, 45.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 933.0, 423.5, 88.0, 88.0 ]
+					"presentation_rect" : [ 1018.0, 423.5, 88.0, 88.0 ]
 				}
 
 			}
@@ -4050,7 +4773,7 @@
 				"box" : 				{
 					"basictuning" : 440,
 					"bgcolor" : [ 0.301960784313725, 0.054901960784314, 0.407843137254902, 1.0 ],
-					"clipheight" : 132.0,
+					"clipheight" : 82.0,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "/Users/jennorris/Library/CloudStorage/Dropbox/burlesque/music/01 - Mad at Disney [Explicit].mp3",
@@ -4159,7 +4882,7 @@
 					"patching_rect" : [ 48.000001430511475, 82.666669130325317, 775.999997138977051, 308.0 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
-					"presentation_rect" : [ 30.0, 60.0, 771.0, 491.0 ],
+					"presentation_rect" : [ 30.0, 60.0, 809.5, 491.0 ],
 					"quality" : "basic",
 					"timestretch" : [ 0 ],
 					"waveformdisplay" : 0
@@ -4177,7 +4900,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 502.5, 1196.0, 106.0, 39.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.999974966049194, -7.666659355163574, 1830.0, 1158.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 1791.0, 1092.0 ],
 					"proportion" : 0.5
 				}
 
@@ -4302,6 +5025,27 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-115", 0 ],
+					"source" : [ "obj-113", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-113", 0 ],
+					"source" : [ "obj-114", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-105", 1 ],
+					"source" : [ "obj-115", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"order" : 1,
 					"source" : [ "obj-12", 0 ]
@@ -4395,7 +5139,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 0 ],
+					"destination" : [ "obj-43", 0 ],
 					"source" : [ "obj-160", 0 ]
 				}
 
@@ -4476,6 +5220,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-27", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-40", 0 ],
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-3", 0 ],
 					"source" : [ "obj-25", 0 ]
 				}
@@ -4485,6 +5243,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-3", 1 ],
 					"source" : [ "obj-26", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-17", 0 ],
+					"source" : [ "obj-27", 0 ]
 				}
 
 			}
@@ -4593,8 +5358,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-39", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-40", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-43", 0 ]
 				}
 
 			}
@@ -4638,7 +5417,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-39", 0 ],
 					"order" : 0,
 					"source" : [ "obj-48", 1 ]
 				}
@@ -4928,6 +5707,34 @@
 				"implicit" : 1
 			}
 , 			{
+				"name" : "2 Shop Theme.mp3",
+				"bootpath" : "~/Music/Music/Media.localized/Unknown Artist/Balatro",
+				"patcherrelativepath" : "../../../Music/Music/Media.localized/Unknown Artist/Balatro",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "3 Tarot Pack Theme.mp3",
+				"bootpath" : "~/Music/Music/Media.localized/Unknown Artist/Balatro",
+				"patcherrelativepath" : "../../../Music/Music/Media.localized/Unknown Artist/Balatro",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "4 Planet Pack Theme.mp3",
+				"bootpath" : "~/Music/Music/Media.localized/Unknown Artist/Balatro",
+				"patcherrelativepath" : "../../../Music/Music/Media.localized/Unknown Artist/Balatro",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "5 Boss Blind Theme.mp3",
+				"bootpath" : "~/Music/Music/Media.localized/Unknown Artist/Balatro",
+				"patcherrelativepath" : "../../../Music/Music/Media.localized/Unknown Artist/Balatro",
+				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "Amelia Arsenic - Choke.mp3",
 				"bootpath" : "~/Library/CloudStorage/Dropbox/burlesque/music",
 				"patcherrelativepath" : "../../../Library/CloudStorage/Dropbox/burlesque/music",
@@ -4988,6 +5795,195 @@
 				"bootpath" : "~/Library/CloudStorage/Dropbox/burlesque/music",
 				"patcherrelativepath" : "../../../Library/CloudStorage/Dropbox/burlesque/music",
 				"type" : "Mp3",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Covenant - Sequencer - 02 Stalker.flac",
+				"bootpath" : "~/Music/Bandcamp/Covenant/1996 - Sequencer",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Covenant/1996 - Sequencer",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 01 Sunny Side Up.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 02 Surf City.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 03 Boardwalk Dulce.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 04 Ivory Tower.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 05 Gone For A Rip.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 06 Yabba Dabba.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 07 Silk Tuxedo.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 08 Cuttin and Diggin.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 09 Subway Smokin.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 10 Sahara.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 11 Royal Oil.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 12 Japonaise.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 13 Standby.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 14 Sloth Pumpkin.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 15 Smelting Pot.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 16 Dabvember til Dabcember.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 17 High's Gone.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 18 Dab City.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 19 Blazy River.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 20 Pineapple.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 21 Sunset Fade.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 22 Blueberry Meringue.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 23 Smoked In.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 24 Petroglyph.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 25 Seventy-Six Days.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Dab Records, Emancipator, Asher Fulero - Dab Records Volume One - 26 Return.flac",
+				"bootpath" : "~/Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"patcherrelativepath" : "../../../Music/Bandcamp/Dab Records, Emancipator, Asher Fulero/2021 - Dab Records Volume One",
+				"type" : "FLAC",
 				"implicit" : 1
 			}
 , 			{
